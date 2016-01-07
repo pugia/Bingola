@@ -81,8 +81,7 @@ class CartellaView: UIView {
         
         // popolo le colonne
         var cols = Array<Array<Int>>()
-        var real_cols:Array<Array<Int>> = [Array](count: 9, repeatedValue: [])
-        var tot = 0
+        var positions:Array<Array<Int>> = [Array](count: 9, repeatedValue: [Int](count: 3, repeatedValue: 0))
         
         for x in 1...9 {
             var c = Array<Int>()
@@ -91,42 +90,27 @@ class CartellaView: UIView {
             cols.append(c)
         }
         
-        
-        while tot < 15 {
-            
-            let index1 = Int(arc4random_uniform(UInt32(cols.count)))
-            
-            if (real_cols[index1].count < 3) {
-                let index2 = Int(arc4random_uniform(UInt32(cols[index1].count)))
-                real_cols[index1].append(cols[index1][index2])
-                cols[index1].removeAtIndex(index2)
-                tot++
+        // riempio tutte le caselle
+        for x in 0...8 {
+            for y in 0...2 {
+                let index2 = Int(arc4random_uniform(UInt32(cols[x].count)))
+                positions[x][y] = cols[x][index2]
+                cols[x].removeAtIndex(index2)
             }
-            
-            real_cols[index1].sortInPlace()
-            
+            positions[x].sortInPlace()
         }
         
-        // creo i vuoti
-        
-        for (i,c) in real_cols.enumerate() {
-            
-            let vuoti = 3 - c.count
-            
-            if (vuoti > 0 && vuoti < 3) {
-                for _ in 0...(vuoti-1) {
-                    let index = Int(arc4random_uniform(3))
-                    if (index < real_cols[i].count) {
-                        real_cols[i].insert(0, atIndex: index)
-                    } else {
-                        real_cols[i].append(0)
-                    }
-                }
+        // svuoto quelle che non mi servono
+        for y in 0...2 {
+            var chiavi = [0,1,2,3,4,5,6,7,8]
+            for _ in 1...4 {
+                let index2 = Int(arc4random_uniform(UInt32(chiavi.count)))
+                positions[chiavi[index2]][y] = 0
+                chiavi.removeAtIndex(index2)
             }
-            
         }
         
-        return real_cols
+        return positions
         
     }
 
