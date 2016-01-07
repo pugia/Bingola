@@ -12,6 +12,11 @@
 		9100D5121C3D5AC800A904D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9100D5101C3D5AC800A904D8 /* Main.storyboard */; };
 		9100D5141C3D5AC800A904D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9100D5131C3D5AC800A904D8 /* Assets.xcassets */; };
 		9100D5171C3D5AC800A904D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9100D5151C3D5AC800A904D8 /* LaunchScreen.storyboard */; };
+		9100D53D1C3DC36D00A904D8 /* CreaCartellaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9100D53B1C3DC36D00A904D8 /* CreaCartellaViewController.swift */; };
+		9100D53E1C3DC36D00A904D8 /* CreaCartellaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9100D53C1C3DC36D00A904D8 /* CreaCartellaViewController.xib */; };
+		9100D5411C3DC49900A904D8 /* CartellaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9100D5401C3DC49900A904D8 /* CartellaView.swift */; };
+		9100D5431C3DC89E00A904D8 /* CasellaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9100D5421C3DC89E00A904D8 /* CasellaView.swift */; };
+		9100D5451C3DC8B300A904D8 /* CasellaView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9100D5441C3DC8B300A904D8 /* CasellaView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		9100D5131C3D5AC800A904D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9100D5161C3D5AC800A904D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9100D5181C3D5AC800A904D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9100D53B1C3DC36D00A904D8 /* CreaCartellaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreaCartellaViewController.swift; sourceTree = "<group>"; };
+		9100D53C1C3DC36D00A904D8 /* CreaCartellaViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreaCartellaViewController.xib; sourceTree = "<group>"; };
+		9100D5401C3DC49900A904D8 /* CartellaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartellaView.swift; sourceTree = "<group>"; };
+		9100D5421C3DC89E00A904D8 /* CasellaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CasellaView.swift; sourceTree = "<group>"; };
+		9100D5441C3DC8B300A904D8 /* CasellaView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CasellaView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +64,7 @@
 		9100D50B1C3D5AC800A904D8 /* Bingola */ = {
 			isa = PBXGroup;
 			children = (
+				9100D53F1C3DC37100A904D8 /* Cartella */,
 				9100D50C1C3D5AC800A904D8 /* AppDelegate.swift */,
 				9100D50E1C3D5AC800A904D8 /* ViewController.swift */,
 				9100D5101C3D5AC800A904D8 /* Main.storyboard */,
@@ -62,6 +73,18 @@
 				9100D5181C3D5AC800A904D8 /* Info.plist */,
 			);
 			path = Bingola;
+			sourceTree = "<group>";
+		};
+		9100D53F1C3DC37100A904D8 /* Cartella */ = {
+			isa = PBXGroup;
+			children = (
+				9100D53B1C3DC36D00A904D8 /* CreaCartellaViewController.swift */,
+				9100D53C1C3DC36D00A904D8 /* CreaCartellaViewController.xib */,
+				9100D5401C3DC49900A904D8 /* CartellaView.swift */,
+				9100D5421C3DC89E00A904D8 /* CasellaView.swift */,
+				9100D5441C3DC8B300A904D8 /* CasellaView.xib */,
+			);
+			name = Cartella;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,7 +146,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9100D5171C3D5AC800A904D8 /* LaunchScreen.storyboard in Resources */,
+				9100D53E1C3DC36D00A904D8 /* CreaCartellaViewController.xib in Resources */,
 				9100D5141C3D5AC800A904D8 /* Assets.xcassets in Resources */,
+				9100D5451C3DC8B300A904D8 /* CasellaView.xib in Resources */,
 				9100D5121C3D5AC800A904D8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,8 +160,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9100D5431C3DC89E00A904D8 /* CasellaView.swift in Sources */,
+				9100D5411C3DC49900A904D8 /* CartellaView.swift in Sources */,
 				9100D50F1C3D5AC800A904D8 /* ViewController.swift in Sources */,
 				9100D50D1C3D5AC800A904D8 /* AppDelegate.swift in Sources */,
+				9100D53D1C3DC36D00A904D8 /* CreaCartellaViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +312,7 @@
 				9100D51D1C3D5AC800A904D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

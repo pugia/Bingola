@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CasellaView" customModule="Bingola" customModuleProvider="target">
+            <connections>
+                <outlet property="valore" destination="w03-KM-axz" id="k93-y8-kDe"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="headTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="w03-KM-axz">
+                    <rect key="frame" x="300.5" y="300" width="0.0" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.2901960784" green="0.66666666669999997" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="w03-KM-axz" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Adu-yu-jSo"/>
+                <constraint firstItem="w03-KM-axz" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="N4s-SH-1wS"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
